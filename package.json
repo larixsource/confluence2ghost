@@ -1,0 +1,46 @@
+{
+  "name": "confluence2ghost",
+  "version": "0.1.0",
+  "main": "lib/confluence2ghost.js",
+  "description": "Generates ghost markdown from confluence storage format",
+
+  "homepage": "https://github.com/larixsource/confluence2ghost",
+
+  "bugs": "https://github.com/larixsource/confluence2ghost/issues",
+  "author": {
+    "name": "Jorge Riquelme",
+    "email": "jorge@larix.cl",
+    "url": "http://www.larix.cl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larixsource/confluence2ghost"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "lib",
+    "cli.js"
+  ],
+  "keywords": [
+    "confluence2ghost",
+    "confluence",
+    "ghost",
+    "markdown"
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "grunt-mocha-cli": "^1.9.0",
+    "jshint-stylish": "^0.2.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "bin": {
+    "confluence2ghost": "cli.js"
+  },
+  "preferGlobal": "true"
+}
