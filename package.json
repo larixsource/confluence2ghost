@@ -36,6 +36,9 @@
     "grunt-mocha-cli": "^1.9.0",
     "jshint-stylish": "^0.2.0"
   },
+  "dependencies": {
+    "to-markdown": "^0.0.2"
+  },
   "scripts": {
     "test": "grunt"
   },
