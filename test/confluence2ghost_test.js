@@ -31,4 +31,16 @@ describe('confluence2ghost node module.', function () {
   it('must be ¡Listo!', function () {
     assert.equal(confluence2ghost.convert('&iexcl;Listo!'), '¡Listo!');
   });
+
+  it('must be pingüino', function () {
+    assert.equal(confluence2ghost.convert('ping&uuml;ino'), 'pingüino');
+  });
+
+  it('must be 1ª', function () {
+    assert.equal(confluence2ghost.convert('1&ordf;'), '1ª');
+  });
+
+  it('must be 2º', function () {
+    assert.equal(confluence2ghost.convert('2&ordm;'), '2º');
+  });
 });
