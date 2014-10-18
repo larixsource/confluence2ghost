@@ -23,4 +23,8 @@ describe('confluence2ghost node module.', function () {
   it('must be ¿Uno o dos?', function () {
     assert.equal(confluence2ghost.convert('&iquest;Uno o dos?'), '¿Uno o dos?');
   });
+
+  it('must be ¡Listo!', function () {
+    assert.equal(confluence2ghost.convert('&iexcl;Listo!'), '¡Listo!');
+  });
 });
