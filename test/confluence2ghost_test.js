@@ -19,4 +19,8 @@ describe('confluence2ghost node module.', function () {
   it('must be "well done"', function () {
     assert.equal(confluence2ghost.convert('well&nbsp;done'), 'well done');
   });
+
+  it('must be ¿Uno o dos?', function () {
+    assert.equal(confluence2ghost.convert('&iquest;Uno o dos?'), '¿Uno o dos?');
+  });
 });
