@@ -20,6 +20,14 @@ describe('confluence2ghost node module.', function () {
     assert.equal(confluence2ghost.convert('ni&ntilde;a'), 'niña');
   });
 
+  it('must be ÁÉÍÓÚ', function () {
+    assert.equal(confluence2ghost.convert('&Aacute;&Eacute;&Iacute;&Oacute;&Uacute;'), 'ÁÉÍÓÚ');
+  });
+
+  it('must be NIÑA', function () {
+    assert.equal(confluence2ghost.convert('NI&Ntilde;A'), 'NIÑA');
+  });
+
   it('must be "well done"', function () {
     assert.equal(confluence2ghost.convert('well&nbsp;done'), 'well done');
   });
