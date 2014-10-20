@@ -29,7 +29,7 @@ describe('confluence2ghost node module.', function () {
   });
 
   it('must be "well done"', function () {
-    assert.equal(confluence2ghost.convert('well&nbsp;done'), 'well done');
+    assert.equal(confluence2ghost.convert('well&nbsp;done'), 'well\u00A0done');
   });
 
   it('must be ¿Uno o dos?', function () {

@@ -37,6 +37,7 @@
     "jshint-stylish": "^0.2.0"
   },
   "dependencies": {
+    "he": ">=0.4.1",
     "to-markdown": "git+https://git@github.com/domchristie/to-markdown.git#bafb3e1",
     "xmldom": "^0.1.19"
   },
