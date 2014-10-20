@@ -26,7 +26,7 @@ $ confluence2ghost file.xhtml
 
 We made this tiny module to translate easily our blog posts from [Confluence](https://www.atlassian.com/software/confluence) to [Ghost](https://ghost.org).
 
-You can get the xhtml from Confluence in **Tools > View Storage Format**. More details in [Confluence Storage Format](https://confluence.atlassian.com/display/DOC/Confluence+Storage+Format). Save the content to a file, and run the command:
+You can get the xhtml of a post from Confluence in **Tools > View Storage Format**. More details in [Confluence Storage Format](https://confluence.atlassian.com/display/DOC/Confluence+Storage+Format). Save the content to a file, and run the command:
 
 ```sh
 $ confluence2ghost file.xhtml
@@ -34,14 +34,14 @@ $ confluence2ghost file.xhtml
 
 Currently, the plugin performs 3 tasks, beside normal xhtml to markdown transformation:
 
-* Entities are unescaped: &iacute; is replaced by 'á'. We write in spanish, and dealing with text with "codes" is uncomfortable, so we get rid of escaped characters.
-* <ac:image> elements are replaces by '![]()', the Ghost marker for an image.
-* <ac:structured-macro ac:name="code"> elements are replaced by code blocks.
+* Entities are unescaped: `&aacute`; is replaced by `á`. We write in spanish, and dealing with text with "codes" is uncomfortable, so we get rid of escaped characters.
+* `<ac:image>` elements are replaces by `![]()`, the Ghost marker for an image.
+* `<ac:structured-macro ac:name="code">` elements are replaced by code blocks.
 
 
 ## Example
 
-This article:
+This post:
 
 ```xhtml
 <h1>Some article</h1>
