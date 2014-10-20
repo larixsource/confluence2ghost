@@ -37,7 +37,7 @@
     "jshint-stylish": "^0.2.0"
   },
   "dependencies": {
-    "to-markdown": "git://github.com/larixsource/to-markdown.git#issue-46",
+    "to-markdown": "git+https://git@github.com/domchristie/to-markdown.git#bafb3e1",
     "xmldom": "^0.1.19"
   },
   "scripts": {
